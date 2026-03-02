@@ -16,8 +16,8 @@
 package com.android.developers.androidify.creation
 
 import androidx.compose.runtime.Composable
+import androidx.xr.compose.platform.LocalSpatialCapabilities
 import com.android.developers.androidify.util.areBothWindowDimensionsAtLeastMedium
-import com.android.developers.androidify.xr.LocalSpatialCapabilities
 
 enum class EditScreenLayoutType {
     Compact,

@@ -20,7 +20,6 @@ import androidx.compose.runtime.Composable
 import com.android.developers.androidify.home.HomeScreenContents
 import com.android.developers.androidify.home.HomeScreenLayoutType
 import com.android.developers.androidify.theme.SharedElementContextPreview
-import com.android.developers.androidify.xr.SupportsFullSpaceModeRequestProvider
 import com.android.developers.androidify.xr.XrHomeSpaceCompactPreview
 import com.android.developers.androidify.xr.XrHomeSpaceMediumPreview
 
@@ -29,15 +28,13 @@ import com.android.developers.androidify.xr.XrHomeSpaceMediumPreview
 @Composable
 private fun HomeScreenMediumXrHomeSpaceModePreview() {
     SharedElementContextPreview {
-        SupportsFullSpaceModeRequestProvider {
-            HomeScreenContents(
-                layoutType = HomeScreenLayoutType.Medium,
-                onClickLetsGo = { },
-                videoLink = "",
-                dancingBotLink = "https://services.google.com/fh/files/misc/android_dancing.gif",
-                onAboutClicked = {},
-            )
-        }
+        HomeScreenContents(
+            layoutType = HomeScreenLayoutType.Medium,
+            onClickLetsGo = { },
+            videoLink = "",
+            dancingBotLink = "https://services.google.com/fh/files/misc/android_dancing.gif",
+            onAboutClicked = {},
+        )
     }
 }
 
@@ -45,15 +42,13 @@ private fun HomeScreenMediumXrHomeSpaceModePreview() {
 @XrHomeSpaceCompactPreview
 @Composable
 private fun HomeScreenCompactXrHomeSpaceModePreview() {
-    SupportsFullSpaceModeRequestProvider {
-        SharedElementContextPreview {
-            HomeScreenContents(
-                layoutType = HomeScreenLayoutType.Compact,
-                onClickLetsGo = {},
-                videoLink = "",
-                dancingBotLink = "https://services.google.com/fh/files/misc/android_dancing.gif",
-                onAboutClicked = {},
-            )
-        }
+    SharedElementContextPreview {
+        HomeScreenContents(
+            layoutType = HomeScreenLayoutType.Compact,
+            onClickLetsGo = {},
+            videoLink = "",
+            dancingBotLink = "https://services.google.com/fh/files/misc/android_dancing.gif",
+            onAboutClicked = {},
+        )
     }
 }

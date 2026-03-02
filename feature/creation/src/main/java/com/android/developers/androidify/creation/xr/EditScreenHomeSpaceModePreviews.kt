@@ -23,7 +23,6 @@ import com.android.developers.androidify.creation.EditScreen
 import com.android.developers.androidify.creation.EditScreenLayoutType
 import com.android.developers.androidify.creation.fakeDropBehaviourFactory
 import com.android.developers.androidify.theme.SharedElementContextPreview
-import com.android.developers.androidify.xr.SupportsFullSpaceModeRequestProvider
 import com.android.developers.androidify.xr.XrHomeSpaceCompactPreview
 import com.android.developers.androidify.xr.XrHomeSpaceMediumPreview
 
@@ -32,24 +31,22 @@ import com.android.developers.androidify.xr.XrHomeSpaceMediumPreview
 @Composable
 private fun EditScreenMediumXrHomeSpaceModePreview() {
     SharedElementContextPreview {
-        SupportsFullSpaceModeRequestProvider {
-            EditScreen(
-                snackbarHostState = SnackbarHostState(),
-                dropBehaviourFactory = fakeDropBehaviourFactory,
-                onCameraPressed = { },
-                uiState = CreationState(),
-                onChooseImageClicked = {},
-                onPromptOptionSelected = {},
-                onUndoPressed = {},
-                onPromptGenerationPressed = {},
-                onBotColorSelected = {},
-                onStartClicked = {},
-                onDropCallback = {},
-                onBackPressed = {},
-                onAboutPressed = {},
-                layoutType = EditScreenLayoutType.Medium,
-            )
-        }
+        EditScreen(
+            snackbarHostState = SnackbarHostState(),
+            dropBehaviourFactory = fakeDropBehaviourFactory,
+            onCameraPressed = { },
+            uiState = CreationState(),
+            onChooseImageClicked = {},
+            onPromptOptionSelected = {},
+            onUndoPressed = {},
+            onPromptGenerationPressed = {},
+            onBotColorSelected = {},
+            onStartClicked = {},
+            onDropCallback = {},
+            onBackPressed = {},
+            onAboutPressed = {},
+            layoutType = EditScreenLayoutType.Medium,
+        )
     }
 }
 
@@ -58,23 +55,21 @@ private fun EditScreenMediumXrHomeSpaceModePreview() {
 @Composable
 private fun EditScreenCompactXrHomeSpaceModePreview() {
     SharedElementContextPreview {
-        SupportsFullSpaceModeRequestProvider {
-            EditScreen(
-                snackbarHostState = SnackbarHostState(),
-                dropBehaviourFactory = fakeDropBehaviourFactory,
-                onCameraPressed = { },
-                uiState = CreationState(),
-                onChooseImageClicked = {},
-                onPromptOptionSelected = {},
-                onUndoPressed = {},
-                onPromptGenerationPressed = {},
-                onBotColorSelected = {},
-                onStartClicked = {},
-                onDropCallback = {},
-                onBackPressed = {},
-                onAboutPressed = {},
-                layoutType = EditScreenLayoutType.Compact,
-            )
-        }
+        EditScreen(
+            snackbarHostState = SnackbarHostState(),
+            dropBehaviourFactory = fakeDropBehaviourFactory,
+            onCameraPressed = { },
+            uiState = CreationState(),
+            onChooseImageClicked = {},
+            onPromptOptionSelected = {},
+            onUndoPressed = {},
+            onPromptGenerationPressed = {},
+            onBotColorSelected = {},
+            onStartClicked = {},
+            onDropCallback = {},
+            onBackPressed = {},
+            onAboutPressed = {},
+            layoutType = EditScreenLayoutType.Compact,
+        )
     }
 }
